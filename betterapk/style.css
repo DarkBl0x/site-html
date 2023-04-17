@@ -1,0 +1,340 @@
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.item {
+			margin: 10px;
+			text-align: center;
+		}
+		
+		.item img {
+			width: 200px;
+			height: 200px;
+			object-fit: cover;
+		}
+		
+		.button {
+			display: inline-block;
+			margin-top: 10px;
+			padding: 10px;
+			border-radius: 20px;
+			background-color: green;
+			color: white;
+			cursor: pointer;
+			transition: backround-color 0.2s ease;
+		}
+
+		.button:hover {
+			background-color: darkred;
+		}
+
+#back-to-top-btn {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background-color: #555;
+	color: #fff;
+	border: none;
+	padding: 10px;
+	border-radius: 50%;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#back-to-top-btn:hover {
+	background-color: #777;
+}
+
+.fa-arrow-up {
+	transform: rotate(-45deg);
+}
+
+		.search-container {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 20px;
+		}
+
+		.search-box {
+			position: relative;
+			width: 300px;
+			height: 40px;
+			border-radius: 20px;
+			background-color: #F2F2F2;
+		}
+
+		.search-box input[type="text"] {
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			border: none;
+			border-radius: 20px;
+			background-color: transparent;
+			font-size: 16px;
+			color: #333;
+			transition: all 0.3s;
+		}
+
+		.search-box input[type="text"]:focus {
+			outline: none;
+			box-shadow: 0px 0px 10px #999;
+		}
+
+		.search-box button {
+			position: absolute;
+			right: 0px;
+			top: 0px;
+			width: 40px;
+			height: 40px;
+			border: none;
+			border-radius: 20px;
+			background-color: #333;
+			color: #fff;
+			font-size: 20px;
+			cursor: pointer;
+			transition: all 0.3s;
+		}
+
+		.search-box button:hover {
+			background-color: #555;
+		}
+
+				#chatbot {
+			position: fixed;
+			right: 20px;
+			bottom: 20px;
+			width: 300px;
+			height: 400px;
+			border-radius: 10px;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px #999;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: hidden;
+			z-index: 9999;
+		}
+
+		#chatbot .header {
+			padding: 10px;
+			background-color: #333;
+			color: #fff;
+			font-size: 18px;
+			text-align: center;
+			cursor: pointer;
+		}
+
+		#chatbot .body {
+			flex-grow: 1;
+			padding: 10px;
+			overflow-y: auto;
+		}
+
+		#chatbot .input-container {
+			display: flex;
+			align-items: center;
+			padding: 10px;
+			background-color: #f2f2f2;
+		}
+
+		#chatbot input[type="text"] {
+			flex-grow: 1;
+			height: 30px;
+			border: none;
+			border-radius: 5px;
+			padding: 5px;
+			margin-right: 5px;
+			font-size: 14px;
+		}
+
+		#chatbot button {
+			height: 30px;
+			padding: 5px 10px;
+			border: none;
+			border-radius: 5px;
+			background-color: #333;
+			color: #fff;
+			font-size: 14px;
+			cursor: pointer;
+		}
+
+		#chatbot .message {
+			margin-bottom: 10px;
+			padding: 10px;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+			font-size: 14px;
+			line-height: 1.5;
+			text-align: left;
+			max-width: 80%;
+			align-self: flex-start;
+		}
+
+		#chatbot .message.bot {
+			background-color: #e6f7ff;
+			align-self: flex-end;
+		}
+
+    body {
+    	background-color: rebeccapurple;
+    }
+
+    /* Style pour le corps de la page */
+body {
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+/* Style pour le titre h1 */
+h1 {
+  color: #333;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Style pour les paragraphes */
+p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Style pour la section conteneur */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+/* Style pour les éléments de la section */
+.item {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Style pour les images des éléments */
+.item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style pour les boutons de téléchargement */
+.button {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Style pour le bouton de retour en haut */
+#back-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: none;
+}
+
+/* Style pour l'icône du bouton de retour en haut */
+#back-to-top-btn i {
+  font-size: 24px;
+}
+ /* Style pour les boutons de téléchargement */
+.button {
+  background-color: #008CBA;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-out; /* Ajoute une transition à la propriété transform */
+}
+
+/* Style pour agrandir le bouton au survol */
+.button:hover {
+  transform: scale(1.1); /* Agrandit le bouton de 10% au survol */
+}
+
+/* Style pour les conteneurs d'articles */
+.item {
+  display: block; /* Affiche chaque élément sur une ligne distincte */
+  margin-bottom: 20px; /* Ajoute un espacement entre chaque élément */
+}
+
+body {
+  background: linear-gradient(to bottom, #c9d6ff, #e2d1ff);
+}
+
+.container {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+  border-radius: 10px;
+}
+
+.button {
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #333;
+}
+
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  padding: 0;
+}
+body {
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.bottom-button {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 50px;
+  padding: 16px 32px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.bottom-button:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateX(-50%) scale(1.1);
+}
